@@ -1,10 +1,10 @@
 num = int(input("Enter a number: "))
 
-digits = []
-
+digits =0
+count = 0
 while num > 0:
     digit = num % 10
-    digits.append(digit)
+    count = count * 10 + digit
     num = num // 10
 
-print("Reversed digits:", digits)
+print("Reversed digits:", count)
